@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Usuario } from './clases/usuario';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PrimerClase';
+  usuario:Usuario;
+
+  constructor () {
+    this.usuario = new Usuario();
+  }
+
+  saludar() {
+    console.log("HOLA");
+  }
+
 }
